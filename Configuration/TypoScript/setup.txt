@@ -1,0 +1,395 @@
+
+/**
+ * plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns
+ */
+plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns {
+
+	preCObject = LOAD_REGISTER
+	preCObject {
+
+		containerClasses.cObject = COA
+		containerClasses.cObject {
+
+			10 = TEXT
+			10 {
+
+				value = {$plugin.tx_adxgridelementscolumns.global.container.classes}
+				override = {$plugin.tx_adxgridelementscolumns.twoColumns.container.classes}
+
+				required = 1
+
+				replacement.10.search = /([^\s]+)/
+				replacement.10.replace = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}$1
+				replacement.10.useRegExp = 1
+
+				noTrimWrap = || |
+			}
+
+			20 = TEXT
+			20 {
+				field = flexform_layout
+				fieldRequired = flexform_layout
+				noTrimWrap = | {$plugin.tx_adxgridelementscolumns.cssClassPrefix}||
+			}
+
+			30 = TEXT
+			30 {
+				value = equalHeight
+				fieldRequired = flexform_equalHeight
+				noTrimWrap = | ||
+			}
+
+			stdWrap.insertData = 1
+			stdWrap.trim = 1
+		}
+
+		containerStyles = {$plugin.tx_adxgridelementscolumns.global.container.styles}
+		containerStyles {
+			override = {$plugin.tx_adxgridelementscolumns.twoColumns.container.styles}
+			required = 1
+			insertData = 1
+		}
+
+		containerAttributes.cObject = COA
+		containerAttributes.cObject {
+
+			10 = TEXT
+			10 {
+				data = register: containerClasses
+				required = 1
+				noTrimWrap = | class="|"|
+			}
+
+			20 = TEXT
+			20 {
+				data = register: containerStyles
+				required = 1
+				noTrimWrap = | style="|"|
+			}
+		}
+	}
+
+	outerWrap = <div{register: containerAttributes}> | </div>
+	outerWrap.insertData = 1
+
+	includeFrontEndResources {
+		includeJS.1343397014 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+	}
+
+	columns.0 {
+
+		preCObject = LOAD_REGISTER
+		preCObject {
+
+			gutter = {$plugin.tx_adxgridelementscolumns.global.gutter}
+			gutter.override = {$plugin.tx_adxgridelementscolumns.twoColumns.gutter}
+
+			contentColumnWidth = {$plugin.tx_adxgridelementscolumns.global.column.1.width}
+			contentColumnWidth {
+
+				override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.1.width}
+
+				prioriCalc = 1
+				round.roundType = round
+				round.decimals = 3
+
+				ifEmpty.cObject = CASE
+				ifEmpty.cObject {
+
+					key.field = flexform_segmentation
+
+					1212 = TEXT
+					1212.dataWrap = (100 - {register: gutter}) / 2
+
+					1323 = TEXT
+					1323.dataWrap = (100 - {register: gutter} * 2) / 3
+
+					2313 = TEXT
+					2313.dataWrap = (100 - {register: gutter} * 2) / 3 * 2 + {register: gutter}
+
+					1434 = TEXT
+					1434.dataWrap = (100 - {register: gutter} * 3) / 4
+
+					3414 = TEXT
+					3414.dataWrap = (100 - {register: gutter} * 3) / 4 * 3 + {register: gutter} * 2
+
+					default < .131313
+				}
+			}
+
+			contentColumnClass.cObject = TEXT
+			contentColumnClass.cObject {
+
+				value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
+				override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.1.classes}
+				required = 1
+
+				noTrimWrap = | class="|"|
+			}
+
+			contentColumnStyle.cObject = COA
+			contentColumnStyle.cObject {
+
+				stdWrap.noTrimWrap = | style="|"|
+
+				10 = TEXT
+				10.value = float:left;
+
+				20 = TEXT
+				20.data = register: contentColumnWidth
+				20.wrap = width:|%;
+
+				30 = TEXT
+				30.data = register: gutter
+				30.wrap = margin-right:|%;
+
+				40 = TEXT
+				40.value = {$plugin.tx_adxgridelementscolumns.global.column.1.styles}
+				40.override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.1.styles}
+			}
+		}
+
+		outerWrap = <div{register: contentColumnClass}{register: contentColumnStyle}> | </div>
+		outerWrap.insertData = 1
+
+		renderObj =< tt_content
+	}
+
+	columns.1 < .columns.0
+	columns.1 {
+
+		preCObject {
+
+			contentColumnWidth = {$plugin.tx_adxgridelementscolumns.global.column.3.width}
+			contentColumnWidth {
+
+				override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.3.width}
+
+				ifEmpty.cObject.1323.dataWrap = (100 - {register: gutter} * 2) / 3 * 2
+				ifEmpty.cObject.2313.dataWrap = (100 - {register: gutter} * 2) / 3
+				ifEmpty.cObject.1434.dataWrap = (100 - {register: gutter} * 3) / 4 * 3 + {register: gutter} * 2
+				ifEmpty.cObject.3414.dataWrap = (100 - {register: gutter} * 3) / 4
+			}
+
+			contentColumnClass.cObject {
+				value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
+				override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.3.classes}
+			}
+
+			contentColumnStyle.cObject {
+				10.value = float:right;
+				30 >
+				40.value = {$plugin.tx_adxgridelementscolumns.global.column.3.styles}
+				40.override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.3.styles}
+			}
+		}
+	}
+}
+
+
+/**
+ * lib.gridElements.setup.tx_adxgridelementscolumns_threecolumns
+ */
+plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
+
+	preCObject = LOAD_REGISTER
+	preCObject {
+
+		containerClasses.cObject = COA
+		containerClasses.cObject {
+
+			10 = TEXT
+			10 {
+
+				value = {$plugin.tx_adxgridelementscolumns.global.container.classes}
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.container.classes}
+
+				required = 1
+
+				replacement.10.search = /([^\s]+)/
+				replacement.10.replace = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}$1
+				replacement.10.useRegExp = 1
+			}
+
+			20 = TEXT
+			20 {
+				field = flexform_layout
+				fieldRequired = flexform_layout
+				noTrimWrap = | {$plugin.tx_adxgridelementscolumns.cssClassPrefix}||
+			}
+
+			30 = TEXT
+			30 {
+				value = equalHeight
+				fieldRequired = flexform_equalHeight
+				noTrimWrap = | ||
+			}
+
+			stdWrap.insertData = 1
+			stdWrap.trim = 1
+		}
+
+		containerStyles = {$plugin.tx_adxgridelementscolumns.global.container.styles}
+		containerStyles {
+
+			override = {$plugin.tx_adxgridelementscolumns.threeColumns.container.styles}
+			insertData = 1
+
+			required = 1
+
+			noTrimWrap = | style="|"|
+		}
+
+		containerAttributes.cObject = COA
+		containerAttributes.cObject {
+
+			10 = TEXT
+			10 {
+				data = register: containerClasses
+				required = 1
+				noTrimWrap = | class="|"|
+			}
+
+			20 = TEXT
+			20 {
+				data = register: containerStyles
+				required = 1
+				noTrimWrap = | style="|"|
+			}
+		}
+	}
+
+	outerWrap = <div{register: containerAttributes}> | </div>
+	outerWrap.insertData = 1
+
+	includeFrontEndResources {
+		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+	}
+
+	columns.0 {
+
+		preCObject = LOAD_REGISTER
+		preCObject {
+
+			gutter = {$plugin.tx_adxgridelementscolumns.global.gutter}
+			gutter.override = {$plugin.tx_adxgridelementscolumns.threeColumns.gutter}
+
+			contentColumnWidth = {$plugin.tx_adxgridelementscolumns.global.column.1.width}
+			contentColumnWidth {
+
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.1.width}
+
+				prioriCalc = 1
+				round.roundType = round
+				round.decimals = 3
+
+				ifEmpty.cObject = CASE
+				ifEmpty.cObject {
+
+					key.field = flexform_segmentation
+
+					131313 = TEXT
+					131313.dataWrap = (100 - {register: gutter} * 2) / 3
+
+					121414 = TEXT
+					121414.dataWrap = (100 - {register: gutter}) / 2
+
+					141214 = TEXT
+					141214.dataWrap = (100 - {register: gutter} * 3) / 4
+
+					141412 = TEXT
+					141412.dataWrap = (100 - {register: gutter} * 3) / 4
+
+					default < .131313
+				}
+			}
+
+			contentColumnClass.cObject = TEXT
+			contentColumnClass.cObject {
+
+				value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.1.classes}
+
+				required = 1
+
+				noTrimWrap = | class="|"|
+			}
+
+			contentColumnStyle.cObject = COA
+			contentColumnStyle.cObject {
+
+				stdWrap.noTrimWrap = | style="|"|
+
+				10 = TEXT
+				10.value = float:left;
+
+				20 = TEXT
+				20.data = register: contentColumnWidth
+				20.wrap = width:|%;
+
+				30 = TEXT
+				30.data = register: gutter
+				30.wrap = margin-right:|%;
+
+				40 = TEXT
+				40.value = {$plugin.tx_adxgridelementscolumns.global.column.1.styles}
+				40.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.1.styles}
+			}
+		}
+
+		outerWrap = <div{register: contentColumnClass}{register: contentColumnStyle}> | </div>
+		outerWrap.insertData = 1
+
+		renderObj =< tt_content
+	}
+
+	columns.1 < .columns.0
+	columns.1 {
+
+		preCObject {
+
+			contentColumnWidth = {$plugin.tx_adxgridelementscolumns.global.column.2.width}
+			contentColumnWidth {
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.2.width}
+				ifEmpty.cObject.121414.dataWrap = (100 - {register: gutter} * 3) / 4
+				ifEmpty.cObject.141214.dataWrap = (100 - {register: gutter}) / 2
+			}
+
+			contentColumnClass.cObject {
+				value = {$plugin.tx_adxgridelementscolumns.global.column.2.classes}
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.2.classes}
+			}
+
+			contentColumnStyle.cObject {
+				40.value = {$plugin.tx_adxgridelementscolumns.global.column.2.styles}
+				40.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.2.styles}
+			}
+		}
+	}
+
+	columns.2 < .columns.0
+	columns.2 {
+
+		preCObject {
+
+			contentColumnWidth = {$plugin.tx_adxgridelementscolumns.global.column.3.width}
+			contentColumnWidth {
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.width}
+				ifEmpty.cObject.121414.dataWrap = (100 - {register: gutter} * 3) / 4
+				ifEmpty.cObject.141412.dataWrap = (100 - {register: gutter}) / 2
+			}
+
+			contentColumnClass.cObject {
+				value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
+				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.classes}
+			}
+
+			contentColumnStyle.cObject {
+				10.value = float:right;
+				30 >
+				40.value = {$plugin.tx_adxgridelementscolumns.global.column.3.styles}
+				40.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.styles}
+			}
+		}
+	}
+}

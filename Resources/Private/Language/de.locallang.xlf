@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-06-13T20:22:32Z" product-name="adx_gridelements_columns">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.tx_adxgridelementscolumns_equal_height" xml:space="preserve">
+				<source>Equal height</source>
+				<target state="translated">Höhe anpassen</target>
+			</trans-unit>
+
+			<trans-unit id="twoColumns.title" xml:space="preserve">
+				<source>Two Columns Group</source>
+				<target state="translated">Zweispalten-Gruppe</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.description" xml:space="preserve">
+				<source>Creates a content group with two columns.</source>
+				<target state="translated">Erstellt einen Seiteninhalt mit zwei Spalten.</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.columnName.1" xml:space="preserve">
+				<source>Left</source>
+				<target state="translated">Links</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.columnName.2" xml:space="preserve">
+				<source>Right</source>
+				<target state="translated">Rechts</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.general" xml:space="preserve">
+				<source>General</source>
+				<target state="translated">Allgemein</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.segmentation" xml:space="preserve">
+				<source>Segmentation</source>
+				<target state="translated">Aufteilung</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.layout" xml:space="preserve">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.layout.0" xml:space="preserve">
+				<source>Default</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.layout.1" xml:space="preserve">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.layout.2" xml:space="preserve">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.layout.3" xml:space="preserve">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.layout.4" xml:space="preserve">
+				<source>Layout 4</source>
+				<target state="translated">Layout 4</target>
+			</trans-unit>
+			<trans-unit id="twoColumns.flexform.equalHeight" xml:space="preserve">
+				<source>Equal height</source>
+				<target state="translated">Höhe anpassen</target>
+			</trans-unit>
+
+			<trans-unit id="threeColumns.title" xml:space="preserve">
+				<source>Three Columns Group</source>
+				<target state="translated">Dreispalten-Gruppe</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.description" xml:space="preserve">
+				<source>Creates a content group with three columns.</source>
+				<target state="translated">Erstellt einen Seiteninhalt mit drei Spalten.</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.columnName.1" xml:space="preserve">
+				<source>Left</source>
+				<target state="translated">Links</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.columnName.2" xml:space="preserve">
+				<source>Center</source>
+				<target state="translated">Mitte</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.columnName.3" xml:space="preserve">
+				<source>Right</source>
+				<target state="translated">Rechts</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.segmentation" xml:space="preserve">
+				<source>Segmentation</source>
+				<target state="translated">Aufteilung</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.layout" xml:space="preserve">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.layout.0" xml:space="preserve">
+				<source>Default</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.layout.1" xml:space="preserve">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.layout.2" xml:space="preserve">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.layout.3" xml:space="preserve">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.layout.4" xml:space="preserve">
+				<source>Layout 4</source>
+				<target state="translated">Layout 4</target>
+			</trans-unit>
+			<trans-unit id="threeColumns.flexform.equalHeight" xml:space="preserve">
+				<source>Equal height</source>
+				<target state="translated">Höhe anpassen</target>
+			</trans-unit>
+
+			<trans-unit id="fourColumns.title" xml:space="preserve">
+				<source>Four Columns Group</source>
+				<target state="translated">Vierspalten-Gruppe</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.description" xml:space="preserve">
+				<source>Creates a content group with four columns.</source>
+				<target state="translated">Erstellt einen Seiteninhalt mit vier Spalten.</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.columnName.1" xml:space="preserve">
+				<source>1st Column</source>
+				<target state="translated">1. Spalte</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.columnName.2" xml:space="preserve">
+				<source>2nd Column</source>
+				<target state="translated">2. Spalte</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.columnName.3" xml:space="preserve">
+				<source>3rd Column</source>
+				<target state="translated">3. Spalte</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.columnName.4" xml:space="preserve">
+				<source>4th Column</source>
+				<target state="translated">4. Spalte</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.segmentation" xml:space="preserve">
+				<source>Segmentation</source>
+				<target state="translated">Aufteilung</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.layout" xml:space="preserve">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.layout.0" xml:space="preserve">
+				<source>Default</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.layout.1" xml:space="preserve">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.layout.2" xml:space="preserve">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.layout.3" xml:space="preserve">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.layout.4" xml:space="preserve">
+				<source>Layout 4</source>
+				<target state="translated">Layout 4</target>
+			</trans-unit>
+			<trans-unit id="fourColumns.flexform.equalHeight" xml:space="preserve">
+				<source>Equal height</source>
+				<target state="translated">Höhe anpassen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,52 @@
+
+/**
+ * plugin.tx_adxgridelementscolumns
+ */
+plugin.tx_adxgridelementscolumns {
+
+	cssClassPrefix = tx-adxgridelementscolumns-
+
+	global {
+
+		gutter = 2.857
+
+		# Have effects to sub groups
+		container {
+
+			width = 
+
+			# Additional class names. cssClassPrefix is added automatically. Required one class!
+			classes = contentGroup
+			styles = 
+		}
+
+		column.1 < .container
+		column.1 {
+			classes = contentLeft
+		}
+
+		column.2 < .container
+		column.2 {
+			classes = contentCenter
+		}
+
+		column.3 < .container
+		column.3 {
+			classes = contentRight
+		}
+
+		column.4 < .container
+		column.4 {
+			classes = contentRight
+		}
+	}
+
+	twoColumns < .global
+	twoColumns.container.classes = contentGroup twoColumns{field: flexform_segmentation}
+
+	threeColumns < .global
+	threeColumns.container.classes = contentGroup threeColumns{field: flexform_segmentation}
+
+	fourColumns < .global
+	fourColumns.container.classes = contentGroup fourColumns{field: flexform_segmentation}
+}
