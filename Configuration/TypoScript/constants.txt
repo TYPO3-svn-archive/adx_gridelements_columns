@@ -4,11 +4,9 @@
  */
 plugin.tx_adxgridelementscolumns {
 
-	cssClassPrefix = tx-adxgridelementscolumns-
+	cssClassPrefix = adxgridelementscolumns-
 
 	global {
-
-		gutter = 2.857
 
 		# Have effects to sub groups
 		container {
@@ -16,37 +14,37 @@ plugin.tx_adxgridelementscolumns {
 			width = 
 
 			# Additional class names. cssClassPrefix is added automatically. Required one class!
-			classes = contentGroup
+			classes = {$plugin.tx_adxless.cssClassPrefix}row-fluid {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-group
 			styles = 
 		}
 
 		column.1 < .container
 		column.1 {
-			classes = contentLeft
+			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-left
 		}
 
 		column.2 < .container
 		column.2 {
-			classes = contentCenter
+			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-center
 		}
 
 		column.3 < .container
 		column.3 {
-			classes = contentRight
+			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-right
 		}
 
 		column.4 < .container
 		column.4 {
-			classes = contentRight
+			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-outer-right
 		}
 	}
 
 	twoColumns < .global
-	twoColumns.container.classes = contentGroup twoColumns{field: flexform_segmentation}
+	twoColumns.container.classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}two-columns-{field: flexform_tx_adxgridelementscolumns_segmentation} )
 
 	threeColumns < .global
-	threeColumns.container.classes = contentGroup threeColumns{field: flexform_segmentation}
+	threeColumns.container.classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}three-columns-{field: flexform_tx_adxgridelementscolumns_segmentation} )
 
 	fourColumns < .global
-	fourColumns.container.classes = contentGroup fourColumns{field: flexform_segmentation}
+	fourColumns.container.classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}four-columns-{field: flexform_tx_adxgridelementscolumns_segmentation} )
 }

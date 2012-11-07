@@ -4,69 +4,73 @@
 		<langDisable>1</langDisable>
 	</meta>
 	<sheets>
-		<tx_adxgridelementscolumns_threecolumns_general>
+		<tx_adxgridelementscolumns_general>
 			<ROOT type="array">
 				<TCEforms>
-					<sheetTitle>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:flexform.sheet.general</sheetTitle>
+					<sheetTitle>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.sheet.general</sheetTitle>
 				</TCEforms>
 				<el type="array">
-					<segmentation type="array">
+					<tx_adxgridelementscolumns_segmentation type="array">
 						<TCEforms type="array">
-							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.segmentation</label>
+							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.segmentation</label>
 							<config type="array">
 								<type>select</type>
 								<size>1</size>
 								<items>
 									<numIndex index="0">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.segmentation.131313</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.segmentation.131313</numIndex>
 										<numIndex index="1">131313</numIndex>
 									</numIndex> 
 									<numIndex index="1">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.segmentation.121414</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.segmentation.121414</numIndex>
 										<numIndex index="1">121414</numIndex>
 									</numIndex> 
 									<numIndex index="2">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.segmentation.141214</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.segmentation.141214</numIndex>
 										<numIndex index="1">141214</numIndex>
 									</numIndex> 
 									<numIndex index="3">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.segmentation.141412</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.segmentation.141412</numIndex>
 										<numIndex index="1">141412</numIndex>
 									</numIndex> 
 								</items>
 							</config>
 						</TCEforms>
-					</segmentation>
-					<layout type="array">
+					</tx_adxgridelementscolumns_segmentation>
+					<tx_adxgridelementscolumns_layout type="array">
 						<TCEforms type="array">
-							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.layout</label>
+							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout</label>
 							<config type="array">
 								<type>select</type>
 								<default type="string">layout1</default>
 								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout.0</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
 									<numIndex index="1">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.layout.1</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout.1</numIndex>
 										<numIndex index="1">layout1</numIndex>
 									</numIndex>
 									<numIndex index="2">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.layout.2</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout.2</numIndex>
 										<numIndex index="1">layout2</numIndex>
 									</numIndex>
 									<numIndex index="3">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.layout.3</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout.3</numIndex>
 										<numIndex index="1">layout3</numIndex>
 									</numIndex>
 									<numIndex index="4">
-										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:threeColumns.flexform.layout.4</numIndex>
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout.4</numIndex>
 										<numIndex index="1">layout4</numIndex>
 									</numIndex>
 								</items>
 							</config>
 						</TCEforms>
-					</layout>
-					<equalHeight type="array">
+					</tx_adxgridelementscolumns_layout>
+					<tx_adxgridelementscolumns_equal_height type="array">
 						<TCEforms type="array">
-							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xlf:threeColumns.flexform.equalHeight</label>
+							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.equalHeight</label>
 							<config type="array">
 								<type>check</type>
 								<items>
@@ -77,9 +81,87 @@
 								</items>
 							</config>
 						</TCEforms>
-					</equalHeight>
+					</tx_adxgridelementscolumns_equal_height>
 				</el>
 			</ROOT>
-		</tx_adxgridelementscolumns_threecolumns_general>
+		</tx_adxgridelementscolumns_general>
+		<tx_adxgridelementscolumns_visibility>
+			<ROOT type="array">
+				<TCEforms>
+					<sheetTitle>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.sheet.visibility</sheetTitle>
+				</TCEforms>
+				<el type="array">
+					<tx_adxgridelementscolumns_visibility_column_1 type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.column1</label>
+							<config type="array">
+								<type>check</type>
+								<cols>3</cols>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnDesktop</numIndex>
+										<numIndex index="1">visible-desktop</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnTablet</numIndex>
+										<numIndex index="1">visible-tablet</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnPhone</numIndex>
+										<numIndex index="1">visible-phone</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</tx_adxgridelementscolumns_visibility_column_1>
+					<tx_adxgridelementscolumns_visibility_column_2 type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.column2</label>
+							<config type="array">
+								<type>check</type>
+								<cols>3</cols>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnDesktop</numIndex>
+										<numIndex index="1">visible-desktop</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnTablet</numIndex>
+										<numIndex index="1">visible-tablet</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnPhone</numIndex>
+										<numIndex index="1">visible-phone</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</tx_adxgridelementscolumns_visibility_column_2>
+					<tx_adxgridelementscolumns_visibility_column_3 type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.column3</label>
+							<config type="array">
+								<type>check</type>
+								<cols>3</cols>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnDesktop</numIndex>
+										<numIndex index="1">visible-desktop</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnTablet</numIndex>
+										<numIndex index="1">visible-tablet</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.visibility.hideOnPhone</numIndex>
+										<numIndex index="1">visible-phone</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</tx_adxgridelementscolumns_visibility_column_3>
+				</el>
+			</ROOT>
+		</tx_adxgridelementscolumns_visibility>
 	</sheets>
 </T3DataStructure>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-06-13T20:22:32Z" product-name="adx_gridelements_columns">
+		<header/>
+		<body>
+			<!-- Configuration/TSconfig/*.ts -->
+			<trans-unit id="TSconfig.twoColumns.title" xml:space="preserve">
+				<source>Two Columns Group</source>
+				<target state="translated">Zweispalten-Gruppe</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.twoColumns.description" xml:space="preserve">
+				<source>Creates a content group with two columns.</source>
+				<target state="translated">Erstellt einen Seiteninhalt mit zwei Spalten.</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.twoColumns.columnName.1" xml:space="preserve">
+				<source>Left</source>
+				<target state="translated">Links</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.twoColumns.columnName.2" xml:space="preserve">
+				<source>Right</source>
+				<target state="translated">Rechts</target>
+			</trans-unit>
+
+			<trans-unit id="TSconfig.threeColumns.title" xml:space="preserve">
+				<source>Three Columns Group</source>
+				<target state="translated">Dreispalten-Gruppe</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.threeColumns.description" xml:space="preserve">
+				<source>Creates a content group with three columns.</source>
+				<target state="translated">Erstellt einen Seiteninhalt mit drei Spalten.</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.threeColumns.columnName.1" xml:space="preserve">
+				<source>Left</source>
+				<target state="translated">Links</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.threeColumns.columnName.2" xml:space="preserve">
+				<source>Center</source>
+				<target state="translated">Mitte</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.threeColumns.columnName.3" xml:space="preserve">
+				<source>Right</source>
+				<target state="translated">Rechts</target>
+			</trans-unit>
+
+			<trans-unit id="TSconfig.fourColumns.title" xml:space="preserve">
+				<source>Four Columns Group</source>
+				<target state="translated">Vierspalten-Gruppe</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.fourColumns.description" xml:space="preserve">
+				<source>Creates a content group with four columns.</source>
+				<target state="translated">Erstellt einen Seiteninhalt mit vier Spalten.</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.fourColumns.columnName.1" xml:space="preserve">
+				<source>1st Column</source>
+				<target state="translated">1. Spalte</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.fourColumns.columnName.2" xml:space="preserve">
+				<source>2nd Column</source>
+				<target state="translated">2. Spalte</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.fourColumns.columnName.3" xml:space="preserve">
+				<source>3rd Column</source>
+				<target state="translated">3. Spalte</target>
+			</trans-unit>
+			<trans-unit id="TSconfig.fourColumns.columnName.4" xml:space="preserve">
+				<source>4th Column</source>
+				<target state="translated">4. Spalte</target>
+			</trans-unit>
+
+			<!-- Configuration/FlexForm/*.xml -->
+			<trans-unit id="flexform.sheet.general" xml:space="preserve">
+				<source>General</source>
+				<target state="translated">Allgemein</target>
+			</trans-unit>
+			<trans-unit id="flexform.segmentation" xml:space="preserve">
+				<source>Segmentation</source>
+				<target state="translated">Aufteilung</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout" xml:space="preserve">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.0" xml:space="preserve">
+				<source>Default</source>
+				<target state="translated">Standard</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.1" xml:space="preserve">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.2" xml:space="preserve">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.3" xml:space="preserve">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.4" xml:space="preserve">
+				<source>Layout 4</source>
+				<target state="translated">Layout 4</target>
+			</trans-unit>
+			<trans-unit id="flexform.equalHeight" xml:space="preserve">
+				<source>Equal height</source>
+				<target state="translated">Höhe anpassen</target>
+			</trans-unit>
+
+			<trans-unit id="flexform.sheet.visibility" xml:space="preserve">
+				<source>Device visibility</source>
+				<target state="translated">Device-Sichtbarkeit</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.column1" xml:space="preserve">
+				<source>Hide column 1 on</source>
+				<target state="translated">Verstecke Spalte 1 auf</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.column2" xml:space="preserve">
+				<source>Hide column 2 on</source>
+				<target state="translated">Verstecke Spalte 2 auf</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.column3" xml:space="preserve">
+				<source>Hide column 3 on</source>
+				<target state="translated">Verstecke Spalte 3 auf</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.column4" xml:space="preserve">
+				<source>Hide column 4 on</source>
+				<target state="translated">Verstecke Spalte 4 auf</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.hideOnDesktop" xml:space="preserve">
+				<source>desktops</source>
+				<target state="translated">Desktops</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.hideOnTablet" xml:space="preserve">
+				<source>tablets</source>
+				<target state="translated">Tablets</target>
+			</trans-unit>
+			<trans-unit id="flexform.visibility.hideOnPhone" xml:space="preserve">
+				<source>phones</source>
+				<target state="translated">Handys</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Extends Grid Elements with flexible columns.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '1.0.0',
+	'version' => '0.0.0',
 	'dependencies' => 'cms,gridelements',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,8 +34,9 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'gridelements' => '1.2.3-',
-			't3jquery' => '2.0.0-',
+			'gridelements' => '1.2.0-',
+			'adx_less' => '1.0.0',
+			't3jquery' => '2.0.0',
 		),
 		'conflicts' => array(
 		),

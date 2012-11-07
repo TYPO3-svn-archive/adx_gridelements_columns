@@ -4,8 +4,8 @@
  */
 tx_gridelements.setup.tx_adxgridelementscolumns_twocolumns {
 
-	title = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:twoColumns.title
-	description = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:twoColumns.description
+	title = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:TSconfig.twoColumns.title
+	description = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:TSconfig.twoColumns.description
 	flexformDS = FILE:EXT:adx_gridelements_columns/Configuration/FlexForm/DSTwoColumns.xml
 	icon = EXT:adx_gridelements_columns/Resources/Public/Icons/24x24/TwoColumns.gif,EXT:adx_gridelements_columns/Resources/Public/Icons/16x16/TwoColumns.gif
 
@@ -17,11 +17,11 @@ tx_gridelements.setup.tx_adxgridelementscolumns_twocolumns {
 			1 {
 				columns {
 					1 {
-						name = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:twoColumns.columnName.1
+						name = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:TSconfig.twoColumns.columnName.1
 						colPos = 0
 					}
 					2 {
-						name = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang.xfl:twoColumns.columnName.2
+						name = LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:TSconfig.twoColumns.columnName.2
 						colPos = 1
 					}
 				}
