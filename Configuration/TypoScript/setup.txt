@@ -73,14 +73,43 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns {
 		preCObject = LOAD_REGISTER
 		preCObject {
 
-			contentColumnClass.cObject = TEXT
+			contentColumnClass.cObject = COA
 			contentColumnClass.cObject {
 
-				value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
-				override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.1.classes}
-				required = 1
+				10 = TEXT
+				10 {
+					value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
+					override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.1.classes}
+				}
 
-				noTrimWrap = | class="|"|
+				20 = CASE
+				20 {
+
+					key.field = flexform_tx_adxgridelementscolumns_segmentation
+
+					1212 = TEXT
+					1212 {
+						value = {$plugin.tx_adxless.grid.columns} / 2
+						prioriCalc = 1
+						wrap = {$plugin.tx_adxless.cssClassPrefix}span |
+					}
+
+					1323 < .1212
+					1323.value = {$plugin.tx_adxless.grid.columns} / 3
+
+					2313 < .1212
+					2313.value = {$plugin.tx_adxless.grid.columns} / 3 * 2
+
+					1434 < .1212
+					1434.value = {$plugin.tx_adxless.grid.columns} / 4
+
+					3414 < .1212
+					3414.value = {$plugin.tx_adxless.grid.columns} / 4 * 3
+
+					stdWrap.noTrimWrap = | ||
+				}
+
+				stdWrap.noTrimWrap = | class="|"|
 			}
 
 			contentColumnStyle.cObject = COA
@@ -107,8 +136,17 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns {
 		preCObject {
 
 			contentColumnClass.cObject {
-				value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
-				override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.3.classes}
+
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
+				10.override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.3.classes}
+
+				20.1323.value = {$plugin.tx_adxless.grid.columns} / 3 * 2
+
+				20.2313.value = {$plugin.tx_adxless.grid.columns} / 3
+
+				20.1434.value = {$plugin.tx_adxless.grid.columns} / 4 * 3
+
+				20.3414.value = {$plugin.tx_adxless.grid.columns} / 4
 			}
 
 			contentColumnStyle.cObject {
@@ -198,15 +236,40 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 		preCObject = LOAD_REGISTER
 		preCObject {
 
-			contentColumnClass.cObject = TEXT
+			contentColumnClass.cObject = COA
 			contentColumnClass.cObject {
 
-				value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
-				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.1.classes}
+				10 = TEXT
+				10 {
+					value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
+					override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.1.classes}
+				}
 
-				stdWrap.noTrimWrap = |{$plugin.tx_adxless.cssClassPrefix}span4 ||
+				20 = CASE
+				20 {
 
-				noTrimWrap = | class="|"|
+					key.field = flexform_tx_adxgridelementscolumns_segmentation
+
+					131313 = TEXT
+					131313 {
+						value = {$plugin.tx_adxless.grid.columns} / 3
+						prioriCalc = 1
+						wrap = {$plugin.tx_adxless.cssClassPrefix}span |
+					}
+
+					121414 < .131313
+					121414.value = {$plugin.tx_adxless.grid.columns} / 2
+
+					141214 < .131313
+					141214.value = {$plugin.tx_adxless.grid.columns} / 4
+
+					141412 < .131313
+					141412.value = {$plugin.tx_adxless.grid.columns} / 4
+
+					stdWrap.noTrimWrap = | ||
+				}
+
+				stdWrap.noTrimWrap = | class="|"|
 			}
 
 			contentColumnStyle.cObject = COA
@@ -233,8 +296,13 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 		preCObject {
 
 			contentColumnClass.cObject {
-				value = {$plugin.tx_adxgridelementscolumns.global.column.2.classes}
-				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.2.classes}
+
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.2.classes}
+				10.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.2.classes}
+
+				20.121414.value = {$plugin.tx_adxless.grid.columns} / 4
+
+				20.141214.value = {$plugin.tx_adxless.grid.columns} / 2
 			}
 
 			contentColumnStyle.cObject {
@@ -250,13 +318,194 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 		preCObject {
 
 			contentColumnClass.cObject {
-				value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
-				override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.classes}
+
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
+				10.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.classes}
+
+				20.121414.value = {$plugin.tx_adxless.grid.columns} / 4
+
+				20.141412.value = {$plugin.tx_adxless.grid.columns} / 2
 			}
 
 			contentColumnStyle.cObject {
 				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.styles}
 				10.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.styles}
+			}
+		}
+	}
+}
+
+
+/**
+ * lib.gridElements.setup.tx_adxgridelementscolumns_fourcolumns
+ */
+plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_fourcolumns {
+
+	preCObject = LOAD_REGISTER
+	preCObject {
+
+		containerClasses.cObject = COA
+		containerClasses.cObject {
+
+			10 = TEXT
+			10 {
+				value = {$plugin.tx_adxgridelementscolumns.global.container.classes}
+				override = {$plugin.tx_adxgridelementscolumns.fourColumns.container.classes}
+				required = 1
+			}
+
+			20 = TEXT
+			20 {
+				field = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}flexform_tx_adxgridelementscolumns_layout
+				fieldRequired = flexform_tx_adxgridelementscolumns_layout
+				noTrimWrap = | ||
+			}
+
+			30 = TEXT
+			30 {
+				value = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}equal-height
+				fieldRequired = flexform_tx_adxgridelementscolumns_equal_height
+				noTrimWrap = | ||
+			}
+
+			stdWrap.insertData = 1
+			stdWrap.trim = 1
+		}
+
+		containerStyles = {$plugin.tx_adxgridelementscolumns.global.container.styles}
+		containerStyles {
+
+			override = {$plugin.tx_adxgridelementscolumns.fourColumns.container.styles}
+			insertData = 1
+
+			required = 1
+
+			noTrimWrap = | style="|"|
+		}
+
+		containerAttributes.cObject = COA
+		containerAttributes.cObject {
+
+			10 = TEXT
+			10 {
+				data = register: containerClasses
+				required = 1
+				noTrimWrap = | class="|"|
+			}
+
+			20 = TEXT
+			20 {
+				data = register: containerStyles
+				required = 1
+				noTrimWrap = | style="|"|
+			}
+		}
+	}
+
+	outerWrap = <div{register: containerAttributes}> | </div>
+	outerWrap.insertData = 1
+
+	includeFrontEndResources {
+		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+	}
+
+	columns.0 {
+
+		preCObject = LOAD_REGISTER
+		preCObject {
+
+			contentColumnClass.cObject = COA
+			contentColumnClass.cObject {
+
+				10 = TEXT
+				10 {
+					value = {$plugin.tx_adxgridelementscolumns.global.column.1.classes}
+					override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.1.classes}
+				}
+
+				20 = CASE
+				20 {
+
+					key.field = flexform_tx_adxgridelementscolumns_segmentation
+
+					14141414 = TEXT
+					14141414 {
+						value = {$plugin.tx_adxless.grid.columns} / 4
+						prioriCalc = 1
+						wrap = {$plugin.tx_adxless.cssClassPrefix}span |
+					}
+
+					stdWrap.noTrimWrap = | ||
+				}
+
+				stdWrap.noTrimWrap = | class="|"|
+			}
+
+			contentColumnStyle.cObject = COA
+			contentColumnStyle.cObject {
+
+				10 = TEXT
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.1.styles}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.1.styles}
+
+				stdWrap.required = 1
+				stdWrap.noTrimWrap = | style="|"|
+			}
+		}
+
+		outerWrap = <div{register: contentColumnClass}{register: contentColumnStyle}> | </div>
+		outerWrap.insertData = 1
+
+		renderObj =< tt_content
+	}
+
+	columns.1 < .columns.0
+	columns.1 {
+
+		preCObject {
+
+			contentColumnClass.cObject {
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.2.classes}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.2.classes}
+			}
+
+			contentColumnStyle.cObject {
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.2.styles}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.2.styles}
+			}
+		}
+	}
+
+	columns.2 < .columns.0
+	columns.2 {
+
+		preCObject {
+
+			contentColumnClass.cObject {
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.3.classes}
+			}
+
+			contentColumnStyle.cObject {
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.styles}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.3.styles}
+			}
+		}
+	}
+
+	columns.3 < .columns.0
+	columns.3 {
+
+		preCObject {
+
+			contentColumnClass.cObject {
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.4.classes}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.4.classes}
+			}
+
+			contentColumnStyle.cObject {
+				10.value = {$plugin.tx_adxgridelementscolumns.global.column.4.styles}
+				10.override = {$plugin.tx_adxgridelementscolumns.fourColumns.column.4.styles}
 			}
 		}
 	}
