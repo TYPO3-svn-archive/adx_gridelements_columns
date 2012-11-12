@@ -13,12 +13,8 @@
 (function($){
 
 	// Equals height of grid boxes.
-	$.fn.equalHeight = function(){
+	$.fn.adxEqualColumnHeight = function(){
 		return this.height(Math.max.apply(this, $.map(this, function(element){ return $(element).height() })));
 	}
-
-	$(document).ready(function(){
-		$('.equalHeight .contentWrap').equalHeight();
-	});
 
 })(jQuery);

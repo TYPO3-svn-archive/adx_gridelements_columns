@@ -6,36 +6,40 @@ plugin.tx_adxgridelementscolumns {
 
 	cssClassPrefix = adxgridelementscolumns-
 
+	equalHeigthSelector = .{$plugin.tx_adxgridelementscolumns.cssClassPrefix}equal-height > .{$plugin.tx_adxgridelementscolumns.cssClassPrefix}column > .csc-default
+
 	global {
 
 		# Have effects to sub groups
 		container {
-
-			width = 
-
 			# Additional class names. cssClassPrefix is added automatically. Required one class!
 			classes = {$plugin.tx_adxless.cssClassPrefix}row-fluid {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-group
 			styles = 
 		}
 
-		column.1 < .container
+		column.all {
+			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column
+			styles = 
+		}
+
+		column.1 < .column.all
 		column.1 {
-			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-left
+			classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-left )
 		}
 
-		column.2 < .container
+		column.2 < .column.all
 		column.2 {
-			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-center
+			classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-center )
 		}
 
-		column.3 < .container
+		column.3 < .column.all
 		column.3 {
-			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-right
+			classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-right )
 		}
 
-		column.4 < .container
+		column.4 < .column.all
 		column.4 {
-			classes = {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-outer-right
+			classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-outer-right )
 		}
 	}
 

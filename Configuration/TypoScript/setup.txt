@@ -65,7 +65,11 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns {
 	outerWrap.insertData = 1
 
 	includeFrontEndResources {
-		includeJS.1343397014 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+
+		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+
+		jsInline.1343394170 = TEXT
+		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
 	}
 
 	columns.0 {
@@ -228,7 +232,11 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 	outerWrap.insertData = 1
 
 	includeFrontEndResources {
+
 		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+
+		jsInline.1343394170 = TEXT
+		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('.{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
 	}
 
 	columns.0 {
@@ -406,7 +414,11 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_fourcolumns {
 	outerWrap.insertData = 1
 
 	includeFrontEndResources {
+
 		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
+
+		jsInline.1343394170 = TEXT
+		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('.{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
 	}
 
 	columns.0 {
