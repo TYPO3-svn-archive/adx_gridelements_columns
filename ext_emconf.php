@@ -34,9 +34,9 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
+			't3jquery' => '2.0.6-',
 			'gridelements' => '1.2.0-',
 			'adx_less' => '1.0.0',
-			't3jquery' => '2.0.0',
 		),
 		'conflicts' => array(
 		),

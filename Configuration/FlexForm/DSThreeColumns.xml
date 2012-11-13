@@ -42,7 +42,6 @@
 							<label>LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout</label>
 							<config type="array">
 								<type>select</type>
-								<default type="string">layout1</default>
 								<items>
 									<numIndex index="0">
 										<numIndex index="0">LLL:EXT:adx_gridelements_columns/Resources/Private/Language/locallang_db.xlf:flexform.layout.0</numIndex>
