@@ -236,7 +236,7 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
 
 		jsInline.1343394170 = TEXT
-		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('.{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
+		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
 	}
 
 	columns.0 {
@@ -418,7 +418,7 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_fourcolumns {
 		includeJS.1343394170 = EXT:adx_gridelements_columns/Resources/Public/JavaScript/Common.js
 
 		jsInline.1343394170 = TEXT
-		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('.{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
+		jsInline.1343394170.value = (function($){ $(document).ready(function(){ $('{$plugin.tx_adxgridelementscolumns.equalHeigthSelector}').adxEqualColumnHeight(); }); })(jQuery);
 	}
 
 	columns.0 {
@@ -522,3 +522,40 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_fourcolumns {
 		}
 	}
 }
+
+#[compatVersion = 4.7.0]
+
+// redefine content space
+tt_content.stdWrap.innerWrap.cObject.default.20 {
+
+	1352887520 = CASE
+	1352887520 {
+
+		key.field = CType
+
+		gridelements_pi1 < tt_content.stdWrap.innerWrap.cObject.default.20.20
+		gridelements_pi1.constant = 0
+
+		default < tt_content.stdWrap.innerWrap.cObject.default.20.20
+
+		stdWrap.noTrimWrap = | ||
+	}
+
+	1352887530 = CASE
+	1352887530 {
+
+		key.field = CType
+
+		gridelements_pi1 < tt_content.stdWrap.innerWrap.cObject.default.20.30
+		gridelements_pi1.constant = 0
+
+		default < tt_content.stdWrap.innerWrap.cObject.default.20.30
+
+		stdWrap.noTrimWrap = | ||
+	}
+
+	20 >
+	30 >
+}
+
+#[end]
