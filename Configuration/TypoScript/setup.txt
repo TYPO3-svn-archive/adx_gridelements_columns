@@ -93,22 +93,22 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns {
 
 					1212 = TEXT
 					1212 {
-						value = {$plugin.tx_adxless.grid.columns} / 2
+						value = {$plugin.tx_adxless.bootstrapGrid.columns} / 2
 						prioriCalc = 1
-						wrap = {$plugin.tx_adxless.cssClassPrefix}span |
+						wrap = {$plugin.tx_adxless.bootstrapGrid.cssClassPrefix}span |
 					}
 
 					1323 < .1212
-					1323.value = {$plugin.tx_adxless.grid.columns} / 3
+					1323.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 3
 
 					2313 < .1212
-					2313.value = {$plugin.tx_adxless.grid.columns} / 3 * 2
+					2313.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 3 * 2
 
 					1434 < .1212
-					1434.value = {$plugin.tx_adxless.grid.columns} / 4
+					1434.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 
 					3414 < .1212
-					3414.value = {$plugin.tx_adxless.grid.columns} / 4 * 3
+					3414.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4 * 3
 
 					stdWrap.noTrimWrap = | ||
 				}
@@ -144,13 +144,13 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_twocolumns {
 				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
 				10.override = {$plugin.tx_adxgridelementscolumns.twoColumns.column.3.classes}
 
-				20.1323.value = {$plugin.tx_adxless.grid.columns} / 3 * 2
+				20.1323.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 3 * 2
 
-				20.2313.value = {$plugin.tx_adxless.grid.columns} / 3
+				20.2313.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 3
 
-				20.1434.value = {$plugin.tx_adxless.grid.columns} / 4 * 3
+				20.1434.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4 * 3
 
-				20.3414.value = {$plugin.tx_adxless.grid.columns} / 4
+				20.3414.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 			}
 
 			contentColumnStyle.cObject {
@@ -260,19 +260,19 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 
 					131313 = TEXT
 					131313 {
-						value = {$plugin.tx_adxless.grid.columns} / 3
+						value = {$plugin.tx_adxless.bootstrapGrid.columns} / 3
 						prioriCalc = 1
-						wrap = {$plugin.tx_adxless.cssClassPrefix}span |
+						wrap = {$plugin.tx_adxless.bootstrapGrid.cssClassPrefix}span |
 					}
 
 					121414 < .131313
-					121414.value = {$plugin.tx_adxless.grid.columns} / 2
+					121414.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 2
 
 					141214 < .131313
-					141214.value = {$plugin.tx_adxless.grid.columns} / 4
+					141214.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 
 					141412 < .131313
-					141412.value = {$plugin.tx_adxless.grid.columns} / 4
+					141412.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 
 					stdWrap.noTrimWrap = | ||
 				}
@@ -308,9 +308,9 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 				10.value = {$plugin.tx_adxgridelementscolumns.global.column.2.classes}
 				10.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.2.classes}
 
-				20.121414.value = {$plugin.tx_adxless.grid.columns} / 4
+				20.121414.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 
-				20.141214.value = {$plugin.tx_adxless.grid.columns} / 2
+				20.141214.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 2
 			}
 
 			contentColumnStyle.cObject {
@@ -330,9 +330,9 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_threecolumns {
 				10.value = {$plugin.tx_adxgridelementscolumns.global.column.3.classes}
 				10.override = {$plugin.tx_adxgridelementscolumns.threeColumns.column.3.classes}
 
-				20.121414.value = {$plugin.tx_adxless.grid.columns} / 4
+				20.121414.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 
-				20.141412.value = {$plugin.tx_adxless.grid.columns} / 2
+				20.141412.value = {$plugin.tx_adxless.bootstrapGrid.columns} / 2
 			}
 
 			contentColumnStyle.cObject {
@@ -442,9 +442,9 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementscolumns_fourcolumns {
 
 					14141414 = TEXT
 					14141414 {
-						value = {$plugin.tx_adxless.grid.columns} / 4
+						value = {$plugin.tx_adxless.bootstrapGrid.columns} / 4
 						prioriCalc = 1
-						wrap = {$plugin.tx_adxless.cssClassPrefix}span |
+						wrap = {$plugin.tx_adxless.bootstrapGrid.cssClassPrefix}span |
 					}
 
 					stdWrap.noTrimWrap = | ||
