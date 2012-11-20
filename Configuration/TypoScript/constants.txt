@@ -13,7 +13,7 @@ plugin.tx_adxgridelementscolumns {
 		# Have effects to sub groups
 		container {
 			# Additional class names. cssClassPrefix is added automatically. Required one class!
-			classes = {$plugin.tx_adxless.bootstrapGrid.cssClassPrefix}row-fluid {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-group
+			classes = row-fluid {$plugin.tx_adxgridelementscolumns.cssClassPrefix}column-group
 			styles = 
 		}
 
