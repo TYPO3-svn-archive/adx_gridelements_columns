@@ -52,3 +52,10 @@ plugin.tx_adxgridelementscolumns {
 	fourColumns < .global
 	fourColumns.container.classes := appendString( {$plugin.tx_adxgridelementscolumns.cssClassPrefix}four-columns-{field: flexform_tx_adxgridelementscolumns_segmentation} )
 }
+
+// activate Twitter Bootstrap grid system
+plugin.tx_adxtwitterbootstrap {
+	components {
+		grid = 1
+	}
+}
