@@ -1,0 +1,6 @@
+1.0.1
+	[BUGFIX] Added content element initialization plugin.tx_gridelements_pi1 = USER to TypoScript.
+	[TASK] Changes including of JavaScript to t3jquery.
+
+1.0.0
+	Initial upload.
